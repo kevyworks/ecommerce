@@ -1,0 +1,313 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+@import url('https://fonts.cdnfonts.com/css/artistry');
+@import url('https://fonts.cdnfonts.com/css/new-brug');
+@import url('https://fonts.cdnfonts.com/css/rubik');
+
+html, body {
+    background-color: #e7e7e7;
+    overflow-x: hidden;
+}
+
+*:root {
+    --app-navbar-height: 70px;
+    --app-subnav-bg-color: #f2f2f2;
+    --app-nav-link-color: #888888;
+    --app-nav-link-active: #000000;
+    --carousel-bg: transparent;
+    --app-hl-text: #fffff;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.noradius {
+    border-radius: 0 !important;
+}
+
+#app-container {
+}
+
+.app-navbar {
+    height: var(--app-navbar-height);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.app-brand {
+    --app-brand-size: calc(var(--bs-navbar-brand-font-size) + .2rem);
+
+    font-weight: 400;
+    font-family: 'NEW BRUG', sans-serif;
+    letter-spacing: 3px;
+    font-size: var(--app-brand-size);
+}
+
+.app-brand-font {
+    font-family: 'NEW BRUG', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.app-navbar-left,
+.app-navbar-right {
+}
+
+.app-navbar-left {
+    overflow-x: hidden;
+}
+
+.app-navbar-left a.nav-link {
+    text-transform: uppercase;
+    color: var(--bs-navbar-brand-color);
+    font-family: 'Artistry', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.app-navbar-left a.nav-link.active,
+.app-navbar-left a.nav-link:hover {
+    font-weight: 900;
+}
+
+.app-icon-menu a.nav-link {
+    color: var(--app-nav-link-color);
+    padding: 1px 0.5rem;
+}
+
+.app-icon-menu a.nav-link.active,
+.app-icon-menu a.nav-link:hover {
+    color: var(--app-nav-link-active);
+}
+
+.app-icon-menu a.nav-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+#app-menu-cart.dropdown-menu > li > *:hover,
+#app-menu-cart.dropdown-menu > li > *:active {
+    color: inherit;
+    background-color: transparent;
+}
+
+#shopping-bag-toggle::after {
+    display: none;
+}
+
+.cart-item {
+    display: flex;
+}
+
+.cart-item:focus, .cart-item:active, .cart-item:hover {
+    background: none !important;
+}
+
+.cart-item * {
+    font-size: 13px !important;
+    margin: 0;
+}
+
+.cart-item h1 {
+
+}
+
+.cart-item-img {
+    display: flex;
+    width: 120px;
+    height: 120px;
+}
+
+.cart-item-details > p {
+    max-width: 160px;
+    white-space: normal;
+}
+
+.app-subnav {
+    background-color: var(--app-subnav-bg-color);
+    align-content: center;
+    height: 60px;
+}
+
+.app-subnav a.nav-link {
+    color: var(--bs-navbar-brand-color);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.app-subnav a.nav-link svg {
+    width: 22px;
+    height: 22px;
+}
+
+.app-highlights {
+    height: calc(100vh - 120px);
+    overflow: hidden;
+}
+
+.app-highlights .carousel-item {
+    height: 100vh;
+    background: var(--carousel-bg) center top;
+    background-size: cover;
+}
+
+.app-highlights .carousel-item .carousel-caption {
+    top: 20%;
+    bottom: unset;
+    color: var(--app-hl-text);
+}
+
+.app-deals-nav .smaller {
+    font-size: 10px;
+}
+
+.app-deals-nav .btn-checkout-deals {
+    letter-spacing: 1px;
+}
+
+.new-arrival-trending {
+    background-image: url("/assets/img/sc-new-arrivals.png");
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-footer a {
+    text-decoration: none;
+    color: var(--bs-dark);
+}
+
+.app-footer {
+
+}
+
+.app-footer a,
+.app-footer h6 {
+    display: block;
+    font-size: 12px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.app-card {
+}
+
+.app-card-row .app-card-img {
+    background: var(--bs-secondary);
+    display: inline-block;
+    overflow-y: hidden;
+    width: 225px;
+    /*height: 300px;*/
+}
+
+.app-card-row .app-card-img + h5 {
+    margin-top: 5px;
+}
+
+.app-card-row .app-card-text-block {
+    display: block;
+    margin-top: 5px;
+    max-width: 225px;
+    height: 50px;
+    overflow-y: hidden;
+}
+
+.app-card-row a {
+    text-decoration: none;
+    color: var(--bs-dark);
+}
+
+.app-card-row p {
+    margin: 0;
+    text-align: start;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.app-card-row .col {
+}
+
+.app-card-row .app-card-buttons {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    max-width: 225px;
+}
+
+.app-card-row .app-card-buttons > p {
+    font-size: 14px;
+}
+
+.app-card-row .app-card-buttons > .btn {
+    padding: 3px 20px;
+    font-size: 14px;
+}
+
+.sc-toast-info {
+    color: var(--bs-info-text-emphasis);
+    background: var(--bs-info-bg-subtle);
+}
+
+.sc-toast-success {
+    color: var(--bs-success-text-emphasis);
+    background: var(--bs-success-bg-subtle);
+}
+
+.sc-toast-warning {
+    color: var(--bs-warning-text-emphasis);
+    background: var(--bs-warning-bg-subtle);
+}
+
+.sc-toast-error {
+    color: var(--bs-danger-text-emphasis);
+    background: var(--bs-danger-bg-subtle);
+}
+
+.social {
+    font-size: 16px !important;
+}
+
+.cc-brands {
+    display: inline-block !important;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 5px !important;
+}
+
+.cc-brands.visa {
+    background-image: url("/assets/img/visa.png");
+}
+
+.cc-brands.master-card {
+    background-image: url("/assets/img/master-card.png");
+}
+
+.cc-brands.maestro {
+    background-image: url("/assets/img/maestro.png");
+}
+
+.cc-brands.amex {
+    background-image: url("/assets/img/american-express.png");
+}
+
+.cc-brands.paypal {
+    background-image: url("/assets/img/paypal.png");
+}
